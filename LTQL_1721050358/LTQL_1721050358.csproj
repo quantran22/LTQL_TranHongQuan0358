@@ -142,6 +142,10 @@
     <Compile Include="Migrations\202112250141354_Creae_table_THQSinhVen358.Designer.cs">
       <DependentUpon>202112250141354_Creae_table_THQSinhVen358.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112250148113_Create_Table_THQ358.cs" />
+    <Compile Include="Migrations\202112250148113_Create_Table_THQ358.Designer.cs">
+      <DependentUpon>202112250148113_Create_Table_THQ358.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\LopHoc358.cs" />
     <Compile Include="Models\LTQLDBContex.cs" />
@@ -217,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112250141354_Creae_table_THQSinhVen358.resx">
       <DependentUpon>202112250141354_Creae_table_THQSinhVen358.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112250148113_Create_Table_THQ358.resx">
+      <DependentUpon>202112250148113_Create_Table_THQ358.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

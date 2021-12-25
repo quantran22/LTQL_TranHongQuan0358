@@ -17,5 +17,6 @@ namespace LTQL_1721050358.Models
         [StringLength(50)]
         public string HoTen { get; set; }
         public int MaLop { get; set; }
+        public virtual LopHoc358 LopHoc358 { get; set; }
     }
 }

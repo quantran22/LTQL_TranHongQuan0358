@@ -17,7 +17,8 @@ namespace LTQL_1721050358.Controllers
         // GET: THQSinhVien358
         public ActionResult Index()
         {
-            return View(db.THQSinhVien358s.ToList());
+            var tHQSinhVien358s = db.THQSinhVien358s.Include(t => t.LopHoc358);
+            return View(tHQSinhVien358s.ToList());
         }
 
         // GET: THQSinhVien358/Details/5
@@ -38,6 +39,7 @@ namespace LTQL_1721050358.Controllers
         // GET: THQSinhVien358/Create
         public ActionResult Create()
         {
+            ViewBag.MaLop = new SelectList(db.LopHoc358s, "Malop", "TenLop");
             return View();
         }
 
@@ -55,6 +57,7 @@ namespace LTQL_1721050358.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.MaLop = new SelectList(db.LopHoc358s, "Malop", "TenLop", tHQSinhVien358.MaLop);
             return View(tHQSinhVien358);
         }
 
@@ -70,6 +73,7 @@ namespace LTQL_1721050358.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.MaLop = new SelectList(db.LopHoc358s, "Malop", "TenLop", tHQSinhVien358.MaLop);
             return View(tHQSinhVien358);
         }
 
@@ -86,6 +90,7 @@ namespace LTQL_1721050358.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.MaLop = new SelectList(db.LopHoc358s, "Malop", "TenLop", tHQSinhVien358.MaLop);
             return View(tHQSinhVien358);
         }
 
