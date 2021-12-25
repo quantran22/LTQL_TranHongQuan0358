@@ -13,5 +13,6 @@ namespace LTQL_1721050358.Models
         }
         public virtual DbSet<LopHoc358> LopHoc358s { get; set; }
         public virtual DbSet<THQSinhVien358> THQSinhVien358s { get; set; }
+        public virtual DbSet<Accounts> Accounts { get; set; }
     }
 }

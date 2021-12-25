@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LopHoc358Controller.cs" />
     <Compile Include="Controllers\THQSinhVien358Controller.cs" />
@@ -146,7 +147,12 @@
     <Compile Include="Migrations\202112250148113_Create_Table_THQ358.Designer.cs">
       <DependentUpon>202112250148113_Create_Table_THQ358.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112250151180_Crate_table_Accounts.cs" />
+    <Compile Include="Migrations\202112250151180_Crate_table_Accounts.Designer.cs">
+      <DependentUpon>202112250151180_Crate_table_Accounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Accounts.cs" />
     <Compile Include="Models\LopHoc358.cs" />
     <Compile Include="Models\LTQLDBContex.cs" />
     <Compile Include="Models\THQSinhVien358.cs" />
@@ -198,6 +204,7 @@
     <Content Include="Views\THQSinhVien358\Details.cshtml" />
     <Content Include="Views\THQSinhVien358\Edit.cshtml" />
     <Content Include="Views\THQSinhVien358\Index.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -224,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112250148113_Create_Table_THQ358.resx">
       <DependentUpon>202112250148113_Create_Table_THQ358.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112250151180_Crate_table_Accounts.resx">
+      <DependentUpon>202112250151180_Crate_table_Accounts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
