@@ -10,12 +10,11 @@ namespace LTQL_1721050358.Controllers
 {
     public class AccountsController : Controller
     {// GET: Accounts
+
         public ActionResult Login()
         {
             return View();
         }
-
-
 
         [HttpPost]
         public ActionResult Login(Accounts acc)
@@ -28,7 +27,7 @@ namespace LTQL_1721050358.Controllers
             return View();
 
         }
-        public ActionResult logoff()
+        public ActionResult logout()
         {
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");

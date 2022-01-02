@@ -6,14 +6,14 @@ namespace LTQL_1721050358.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Create_table_LH358 : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
+    public sealed partial class abc : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Create_table_LH358));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(abc));
         
         string IMigrationMetadata.Id
         {
-            get { return "202112250131348_Create_table_LH358"; }
+            get { return "202201010109240_abc"; }
         }
         
         string IMigrationMetadata.Source

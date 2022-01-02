@@ -9,17 +9,18 @@ using System.Web.Mvc;
 using LTQL_1721050358.Models;
 
 namespace LTQL_1721050358.Controllers
-{
+{ 
+    [Authorize]
     public class LopHoc358Controller : Controller
     {
         private LTQLDBContex db = new LTQLDBContex();
-
+        [AllowAnonymous]
         // GET: LopHoc358
         public ActionResult Index()
         {
             return View(db.LopHoc358s.ToList());
         }
-
+        [AllowAnonymous]
         // GET: LopHoc358/Details/5
         public ActionResult Details(int? id)
         {

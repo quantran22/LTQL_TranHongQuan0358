@@ -135,21 +135,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202112250131348_Create_table_LH358.cs" />
-    <Compile Include="Migrations\202112250131348_Create_table_LH358.Designer.cs">
-      <DependentUpon>202112250131348_Create_table_LH358.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202112250141354_Creae_table_THQSinhVen358.cs" />
-    <Compile Include="Migrations\202112250141354_Creae_table_THQSinhVen358.Designer.cs">
-      <DependentUpon>202112250141354_Creae_table_THQSinhVen358.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202112250148113_Create_Table_THQ358.cs" />
-    <Compile Include="Migrations\202112250148113_Create_Table_THQ358.Designer.cs">
-      <DependentUpon>202112250148113_Create_Table_THQ358.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202112250151180_Crate_table_Accounts.cs" />
-    <Compile Include="Migrations\202112250151180_Crate_table_Accounts.Designer.cs">
-      <DependentUpon>202112250151180_Crate_table_Accounts.cs</DependentUpon>
+    <Compile Include="Migrations\202201010109240_abc.cs" />
+    <Compile Include="Migrations\202201010109240_abc.Designer.cs">
+      <DependentUpon>202201010109240_abc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Accounts.cs" />
@@ -223,17 +211,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202112250131348_Create_table_LH358.resx">
-      <DependentUpon>202112250131348_Create_table_LH358.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202112250141354_Creae_table_THQSinhVen358.resx">
-      <DependentUpon>202112250141354_Creae_table_THQSinhVen358.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202112250148113_Create_Table_THQ358.resx">
-      <DependentUpon>202112250148113_Create_Table_THQ358.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202112250151180_Crate_table_Accounts.resx">
-      <DependentUpon>202112250151180_Crate_table_Accounts.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202201010109240_abc.resx">
+      <DependentUpon>202201010109240_abc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

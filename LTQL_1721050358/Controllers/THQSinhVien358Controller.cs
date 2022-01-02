@@ -10,17 +10,18 @@ using LTQL_1721050358.Models;
 
 namespace LTQL_1721050358.Controllers
 {
+    [Authorize]
     public class THQSinhVien358Controller : Controller
     {
         private LTQLDBContex db = new LTQLDBContex();
-
+        [AllowAnonymous]
         // GET: THQSinhVien358
         public ActionResult Index()
         {
             var tHQSinhVien358s = db.THQSinhVien358s.Include(t => t.LopHoc358);
             return View(tHQSinhVien358s.ToList());
         }
-
+        [AllowAnonymous]
         // GET: THQSinhVien358/Details/5
         public ActionResult Details(string id)
         {
